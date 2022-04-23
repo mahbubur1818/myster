@@ -1,0 +1,299 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+}
+body{
+  background: rgb(22, 27, 46,255);
+  user-select: none;
+  background: #BFCFF7 !important;
+	color: black;
+}
+/*#all_container{
+	width: 90%;
+
+}*/
+#header_container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 60px;
+	position: sticky;
+	top: 0;
+}
+#header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	color: white;
+	/*! height: 50px; */
+	align-items: center;
+	position: relative;
+	z-index: 20;
+}
+#header_container::before {
+  content: "";
+
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+  background: #D9EEE1 !important;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+body::before{
+	content: "";
+	/*background: url("icon/tech.jpg") no-repeat center center/cover;*/
+	
+	opacity: 0.6;
+	width: 100%;
+	height: 450px;
+	position: absolute;
+	z-index: -2;
+	top: 0;
+	left: 0;
+	background: linear-gradient(45deg,#0c8a20,black);
+}
+#logo{
+
+}
+#logo_name{
+	color: #059862 !important;
+	font-size: 30px;
+	font-weight: 700;
+	position: relative;
+	top: -2px;
+}
+#nav{
+	
+  display: flex;
+  align-items: center;
+}
+#nav ul{
+	display: flex;
+	flex-direction: row;
+	list-style: none
+}
+#nav ul li{
+
+}
+#nav ul li a{
+	text-decoration: none;
+	padding: 5px 18px;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	border-radius: 20px;
+	margin: 0 0.1rem;
+	color: black;
+}
+#nav ul li a:hover{
+	color: white;
+	background: #059862;
+}
+#login{
+
+}
+#login button{
+
+  padding: 5px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 22px;
+  /*! box-shadow: 2px 5px 30px gray,3px -6px 28px #a5a5ac; */
+  color: black;
+  background: #059862 !important;
+  color: wheat;
+}
+#welcome_text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 400px;
+	font-size: 1.5rem;
+	position: relative;
+	z-index: -2;
+	overflow: hidden;
+}
+#welcome_text > div:nth-of-type(3){
+
+  font-size: 22px;
+  color: rgba(0,0,0,0.5);
+}
+#welcome_text > div:nth-of-type(2){
+	
+  font-size: 45px;
+  font-weight: bold;
+  margin: 15px;
+  color: #09261f;
+}
+
+/*style section*/
+
+#main_div{
+
+	position: relative;
+	top: -200px;
+	z-index: -1;
+	display: flex;
+	justify-content: space-between;
+}
+.box{
+	height: 200px;
+	width: 200px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	position: relative;
+	border-radius: 15px;
+	top: -278px;
+	left: -59px;
+}
+.box::before{
+	content: "";
+	position: absolute;
+	background: linear-gradient(cyan,blue);
+	height: 300px;
+	width: 100px;
+	animation: box_animate 4s linear infinite;
+}
+.box::after{
+	content: "";
+	position: absolute;
+	background: #508c6f;
+	inset:5px;
+	border-radius: 10px;
+}
+.box2::after{
+	content: "";
+	position: absolute;
+	background: #4d6266;
+	inset:5px;
+	border-radius: 10px;
+}
+.box2{
+	
+	left: 65px;
+	position: relative;
+	/*! top: -4px; */
+}
+@keyframes box_animate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+
+#all_continer{
+	
+}
+#title_con{
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 8%;
+	margin-top: -195px;
+}
+
+#title_con > h1{
+	
+	margin: 20px 13px 15px 30px;
+	color: #3636c1;
+	margin-right: auto;
+}
+#info{
+
+	margin: 6px 0 30px 30px;
+	color: #232328;
+	font-family: roboto;
+	padding: 0 35px;
+	padding-left: 0;
+}
+
+#box_container{
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#box{
+	
+	width: 40%;
+	padding: 20px;
+	box-shadow: 2px 2px 5px 10px rgba(0,0,0,0.05);
+	margin: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#box >img{
+	width: 170px;
+	height: 100px;
+	margin-right: 20px;
+}
+#description{
+	
+	width: 85%;
+}
+#description h1{
+	
+	font-size: 1.5rem;
+	/*! margin: 10px 0; */
+	color: #059862;
+}
+#description >div{
+	
+	margin: 10px 0;
+}
+#description > div img{
+	
+	width: 10px;
+	height: 10px;
+}
+#description > div > div{
+	
+	display: inline;
+	margin-left: 10px;
+	color: #736d6d;
+}
+#description > p{
+	
+	color: rgba(0,0,0,0.7);
+}
+
+/*....*/
+
+#coming_soon{
+	
+	color: green;
+	display: flex;
+	font-weight: bold;
+	justify-content: center;
+	align-items: center;
+	margin: 30px 15px;
+}
+#coming_soon hr{
+	
+	width: 35%;
+	height: 2px;
+	color: #686895;
+}
+#coming_soon p{
+	margin: 10px;
+	color: green;
+	font-weight: bold;
+}
