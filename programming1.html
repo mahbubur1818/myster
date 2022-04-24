@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Extract text from image using python</title>
+	<link rel="stylesheet" type="text/css" href="programming_all.css">
+</head>
+<body>
+	<div id="con">
+		<h1 class="title">Extract text from image using python program with tesseract</h1>
+		<p>Extract text from image is known as OCR (Optical Character Recognition). Python-tesseract is an optical character recognition (OCR) tool for Python </p>
+		<p>For Windows download the tesseract from <a href="https://github.com/UB-Mannheim/tesseract/wiki">here</a> </p>
+		<p>You must have python installed in your computer. Then install these modules</p>
+
+		<div class="code">pip install opencv-python<br>
+		pip install pytesseract<br>
+		pip install tesseract</div>
+
+		<p>First import necessary modules</p>
+		<div class="code">import cv2<br>
+	import pytesseract</div>
+		<p>Then read the image and add the location of the tesseract</p>
+		<div class="code">img = cv2.imread('quotes.jpg')<br>
+			pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'
+		</div>
+		<p>Then convert the image to string using the image_to_string() method . And print the output. The complete code is here.</p>
+		<div class="code">
+			import cv2<br>
+			import pytesseract<br>
+			<br>
+			# reading image<br>
+			img = cv2.imread('pic.jpg')<br>
+			<br>
+			# configurations is optional
+			config = ('-l eng --oem 1 --psm 3')
+			<br>
+			pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'<br>
+			text = pytesseract.image_to_string(img, config=config)<br>
+			<br>
+			# printing output text<br>
+			print(text)<br>
+		</div>
+	</div>
+</body>
+</html>

@@ -93,7 +93,8 @@ body::before{
 	color: white;
 	border-radius: 20px;
 	margin: 0 0.1rem;
-	color: black;
+	color: rgba(0,0,0,0.8);
+	font-family: 'Josefin Sans', sans-serif;
 }
 .active_nav{
 	/*! border-bottom: 1px solid black; */
@@ -163,6 +164,7 @@ body::before{
 }*/
 
 #welcome_text{
+	font-family: 'PT Serif', serif;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -191,7 +193,7 @@ body::before{
   font-weight: bold;
   position: relative;
   right: -57px;
-  font-family: source-sans;
+  font-family: 'PT Serif', serif;
 }
 #welcome_text > div:nth-of-type(2) span{
 	
@@ -440,6 +442,7 @@ border-radius: 10px;
 	font-weight: bold;
  margin: 5px;
  margin-left: 0;
+ font-family: 'Pacifico', cursive;
 }
 #text p:nth-of-type(3){
   color:rgba(0,0,0,0.5);
@@ -456,7 +459,7 @@ border-radius: 10px;
 
   padding: 35px 0px;
 }
-#social_media img{
+#social_media img,#social_media svg{
 	width: 30px;
 	background: white;
 	border-radius: 50%;
@@ -486,6 +489,7 @@ border-radius: 10px;
   font-weight: bold;
   top: -15px;
   margin-top: -15px;
+  font-family: 'Chakra Petch', sans-serif;
 }
 #list_container{
 
@@ -589,11 +593,18 @@ border-radius: 10px;
 .service_list h2{
 
   color: #4f75bf;
+  font-family: 'Chakra Petch', sans-serif;
 }
-.service_list img{
-
-  width: 85px;
+.service_list svg{
+  width: 50px;
   margin: 15px;
+}
+.service_list:nth-of-type(2) svg{
+  width: 70px;
+  margin: 15px;
+}
+.service_list svg path{
+	
 }
 
 .service_list div{
@@ -632,6 +643,7 @@ border-radius: 10px;
   text-align: center;
   padding-top: 15px;
   font-weight: bold;
+  font-family: 'Chakra Petch', sans-serif;
 }
 #blog_container{
   display: flex;
@@ -646,7 +658,7 @@ border-radius: 10px;
 .card{
 	position: relative;
 	min-width: 320px;
-	height: 440px;
+	height: 385px;
 	box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
 				inset -5px -5px 5px rgba(255,255,255,0.5),
 				5px 5px 5px rgba(0,0,0,0.05),
@@ -670,13 +682,14 @@ border-radius: 10px;
 	transition: 0.5s;
 }
 .box img{
-  height: 100px;
-width: 100px;
+  height: 115px;
+width: 170px;
 }
 .box h2{
 	/*! font-size: 1.5em; */
-	color: #777;
+	color: #464444;
 	transition: 0.5s;
+	margin: 10px;
 }
 .box div{
 	font-size: 1em;
@@ -687,10 +700,11 @@ width: 100px;
 	position: relative;
 	display: inline-block;
 	padding: 8px 20px;
-	background: #03a9f4;
+	background: #1e805c;
 	margin-top: 14px;
 	border-radius: 20px;
 	text-decoration: none;
+	color: white;
 }
 .content{
 	padding: 20px;
@@ -698,7 +712,7 @@ width: 100px;
 }
 
 .card:hover a{
-	background: #ff568f;
+	background: #145b77;
 }
 .card:hover .box{
 	transform: translateY(-30px);
@@ -721,6 +735,7 @@ width: 100px;
   text-align: center;
   margin: 20px auto;
   color: #059862;
+  font-family: 'Chakra Petch', sans-serif;
 }
 #comment{
 
@@ -839,6 +854,7 @@ width: 100px;
   margin-bottom: 54px;
   margin-right: 65px;
   color: #1a0a70;
+  font-family: 'Chakra Petch', sans-serif;
 }
 #contact_2{
   /*! margin-left: 15%; */
@@ -958,3 +974,11 @@ form input {
 #link div:nth-child(1) {
   margin: 0;
 }
+
+
+
+
+
+/*#for mobile phones*/
+
+
