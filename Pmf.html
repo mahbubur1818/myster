@@ -1,0 +1,65 @@
+programming 3
+
+<h1>Delete all empty folders using python program.</h1>
+<p>There are different ways to clean up all empty folders using python. The easiest way is to use Os.walk(). Let's make a simple program</p>
+<pre class="code">
+  import os
+  dir = "D:\"
+  for (dirpath, folder_names, files) in os.walk(dir,topdown=False):
+    if not folder_names and not files:
+      os.rmdir(dirpath)
+</pre>
+<p>But it not work properly all the time if the foder is in too deep. we can make our program more advance.</p>
+<pre class="code">
+import os
+def remove_empty(path):
+    print(list(os.walk(path)))
+    for (dirpath, folder_names, files) in os.walk(path):
+        for filename in files:
+            file_location = dirpath + '/' + filename
+            if os.path.isfile(file_location):
+                if os.path.getsize(file_location) == 0:
+                    os.remove(file_location)
+
+if __name__ == "__main__":
+    path = 'C:/Users/nikk/Desktop/' #Location of the folder
+    remove_empty(path)
+</pre>
+
+
+programming 4
+
+<h1>Send Free SMS with twilio API using python</h1>
+<p>We can send programmable sms using python with the help of twilio API. Twilio offers some free credit which can be used to send SMS, MMS or voice call. First you have to create a free twilio account. You will get free 15$ . Go to <a href="https://www.twilio.com">https://www.twilio.com</a> </p>
+<p>Install twilio python library using pip</p>
+<div class="code">
+  pip install twilio
+</div>
+<p>After completing registration create a phone number. From the twilio console(dashboard), copy the ACCOUNT SID and AUTH TOKEN and use it like this.</p>
+<div class="code">
+from twilio.rest import Client <br />
+account_sid = 'ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' <br />
+auth_token = 'your_auth_token' <br />
+</div>
+The complete code is like this.
+<pre class="code">
+from twilio.rest import Client 
+
+account_sid = 'ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+
+auth_token = 'your_auth_token'
+
+client = Client(account_sid, auth_token) 
+
+''' Change the value of 'from' with the number  
+received from Twilio and the value of 'to' 
+with the number in which you want to send message.'''
+
+message = client.messages.create( 
+                              from_='+15017122661', 
+                              body ='Hello, this is from pmf.', 
+                              to ='+8801788766287'
+                          ) 
+
+print(message.sid)
+</pre>
