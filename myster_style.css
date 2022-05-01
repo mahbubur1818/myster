@@ -22,7 +22,7 @@ body::before{
 	top: 0;
 	left: 0;
 	/*! overflow: hidden; */
-	overscroll-behavior-x: none;
+	/*! overscroll-behavior-x: none; */
 }
 #issue{
 	
@@ -1100,6 +1100,7 @@ form input {
 	}
 	#learning_support2 {
 	height: 100vw;
+	width: ;
 }
 	#main_container{
 		margin-top: -80%
@@ -1125,7 +1126,7 @@ form input {
 	}
 
 }
-@media(max-width:700px){
+/*@media(max-width:700px){
 	#header #logo{
 		display: block;
 		position: relative;
@@ -1135,7 +1136,7 @@ form input {
   transform: translateY(-26px);
 	}
 	#header{
-/* 		transform: translateX(-100px); */
+ 		transform: translateX(-100px); 
 			transform: translateY(0px);
 	}
 	#header #nav{
@@ -1148,15 +1149,15 @@ form input {
 		  transform: translateY(-36px);
 	}
 	
-}
+}*/
 @media(max-width:600px){
-	#header_container2{
+	/*/*#header_container2{
 		display: block;
 	}
 		#header_container{
 /* 		display: none; */
 /*       width: 1px; */
-	}
+	/*}
 	#header2 #logo_name img{
 		width: 100px;
 		transform: translateY(-80px)
@@ -1175,7 +1176,7 @@ form input {
 		margin-left: -80%;
 	}
 	#header2 #nav li a{
-/* 		padding: 31px; */
+/* 		padding: 31px; 
 		text-decoration: none;
 		font-weight: bold;
 		color: #192a4a;
@@ -1201,9 +1202,8 @@ form input {
 	}
 	#header2 #cross{
 		width:16px;
-/* 		display: none; */
 		margin-right: 8px;
-	}
+	}*/*
 	
 /* 	common ended */
 	#footer{
@@ -1338,6 +1338,10 @@ form input {
 	#header2{
 		width: 70%;
 	}
+	.card:nth-of-type(2){
+		height: 420px;
+	}
+	
 }
 @media(max-width:325px){
 	#header_support{

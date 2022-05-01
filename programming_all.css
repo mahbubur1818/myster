@@ -30,3 +30,13 @@ body{
 	line-height: 21px;
 	margin: 15px 0;
 }
+
+
+@media(max-width:400px){
+	.title{
+		font-size: 1.6rem;
+	}
+		#con{
+			width: 90%;
+	}
+}
