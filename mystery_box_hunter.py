@@ -4,7 +4,7 @@ import time
 import os
 
 user = "mahbuburrahman0bd@gmail.com"
-pas = "arop@pmf#04"
+pas = "********"
 product_link = "https://www.daraz.com.bd/products/100-i184736473-s1129914674.html?spm=a2a0e.home.just4u.5.735212f7a3mc0J&scm=1007.28811.276117.0&pvid=248f1254-1e01-4f86-9c0d-154f29ae9eeb&clickTrackInfo=pvid%3A248f1254-1e01-4f86-9c0d-154f29ae9eeb%3Bchannel_id%3A0000%3Bmt%3Ai2i%3Bitem_id%3A184736473%3B"
 
 driver = webdriver.Chrome(executable_path=r'D:\Software\Download\chromedriver.exe')
